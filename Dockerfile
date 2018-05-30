@@ -5,8 +5,6 @@ RUN cd && git clone https://github.com/nimiq-network/core.git
 WORKDIR /home/node/core
 RUN mkdir /home/node/core/test-full-consensus && \
     mkdir /home/node/core/full-consensus
-VOLUME testconsensus:/home/node/core/test-full-consensus
-VOLUME consensus:/home/node/core/full-consensus
 RUN yarn install
 
 ARG NETWORK
